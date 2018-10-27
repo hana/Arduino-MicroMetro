@@ -27,5 +27,7 @@ if(metro.bang()) {
 ```
 
 ___
-#LICENSE  
-CC-BY 4.0
+# LICENSE  
+These cods are licensed ander CC-BY 4.0  
+[CC BY](https://creativecommons.org/licenses/by/2.0/)*
+
