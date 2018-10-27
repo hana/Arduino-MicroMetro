@@ -4,7 +4,8 @@ Simple metro working with microseconds.
 
 ## Usage
 ### Installation
-Put `Micrometro` folder into your arduino "Libraries" folder.
+1. Download this Library and rename the folder name into "MicroMetro"
+2. Put `Micrometro` folder into your arduino "Libraries" folder.
 
 
 ### Code
@@ -26,5 +27,5 @@ if(metro.bang()) {
 ```
 
 ___
-#LICENSE
+#LICENSE  
 CC-BY 4.0
