@@ -13,7 +13,9 @@ MicroMetro	KEYWORD1
 #######################################
 
 bang	KEYWORD2
-interval	KEYWORD2
+check	KEYWORD2
+setInterval	KEYWORD2
+reset	KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)

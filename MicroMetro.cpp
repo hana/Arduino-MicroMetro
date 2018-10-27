@@ -48,6 +48,10 @@ uint8_t MicroMetro::bang()    {
 
 }
 
+uint8_t MicroMetro::check() {
+ return this->bang();
+}
+
 void MicroMetro::reset(){
   this->previous_micros = micros();
 }

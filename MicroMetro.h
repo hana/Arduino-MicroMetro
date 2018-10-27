@@ -17,6 +17,7 @@ public:
     MicroMetro(unsigned long interval);
     void setInterval(unsigned long interval);
     uint8_t bang();
+    uint8_t check();
     void reset();
 
 private:
