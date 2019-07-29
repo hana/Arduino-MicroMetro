@@ -9,36 +9,32 @@
 #include "MicroMetro.h"
 
 MicroMetro::MicroMetro()    {
-
-	this->interval_micros = 1000;
-
+	this->interval = 1000;
 }
 
 
 MicroMetro::MicroMetro(unsigned long interval){
-
-	this->interval_micros = interval;
-
+	this->interval = interval;
 }
 
 
 void MicroMetro::setInterval(unsigned long interval){
-  this->interval_micros = interval;
+  this->interval = interval;
 }
 
-uint8_t MicroMetro::bang()    {
+uint8_t MicroMetro::check()    {
   now = micros();
 
-  if ( interval_micros == 0 ){
-    previous_micros = now;
+  if ( interval == 0 ){
+    previous_time = now;
     return 1;
   }
 
-  if ( (now - previous_micros) >= interval_micros) {
+  if ( (now - previous_time) >= interval) {
 	    #ifdef NOCATCH_UP
-	    previous_micros = now ;
+	    previous_time = now ;
 	    #else
-	    previous_micros += interval_micros ;
+	    previous_time += interval ;
 	    #endif
 
       return 1;
@@ -48,12 +44,8 @@ uint8_t MicroMetro::bang()    {
 
 }
 
-uint8_t MicroMetro::check() {
- return this->bang();
-}
-
 void MicroMetro::reset(){
-  this->previous_micros = micros();
+  this->previous_time = micros();
 }
 
 

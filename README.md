@@ -21,7 +21,7 @@ MicroMetro metro = MicroMetro(1000000);	// 1000000us = 1 sec
 
 3. in Loop()...
 ```
-if(metro.bang()) {
+if(metro.check()) {
  //do something here
 }
 ```

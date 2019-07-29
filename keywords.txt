@@ -12,16 +12,6 @@ MicroMetro	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-bang	KEYWORD2
 check	KEYWORD2
 setInterval	KEYWORD2
 reset	KEYWORD2
-
-#######################################
-# Instances (KEYWORD2)
-#######################################
-
-#######################################
-# Constants (LITERAL1)
-#######################################
-

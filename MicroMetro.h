@@ -16,13 +16,11 @@ public:
     MicroMetro();
     MicroMetro(unsigned long interval);
     void setInterval(unsigned long interval);
-    uint8_t bang();
     uint8_t check();
     void reset();
 
 private:
-  unsigned long  previous_micros, interval_micros, now;
-
+  unsigned long  previous_time, interval, now;
 };
 
 #endif
